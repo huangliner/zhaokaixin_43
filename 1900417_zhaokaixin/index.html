@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		
+		
+		<script type="text/javascript">
+			var a=[5,3,2,4,1,0]
+			function paixu1 (a) {
+				for (var i=0,len=a.length;i<len;i++) {
+					for (var j=i+1;j<len;j++) {
+						var c=a[i];
+						if (c>a[j]) {
+							a[i]=a[j];
+							a[j]=c;
+						}
+					}
+				}
+			}
+				
+			function paixu2 (a) {
+				for (var j=1,len=a.length;j<len;j++) {
+					for(var i=0;i<len-j;i++){
+						var tf=true;
+						var c=a[i];
+						if (a[i]>a[i+1]) {
+							a[i]=a[i+1];
+							a[i+1]=c;
+							tf=false;
+						}
+					}
+					if (tf) {
+						break;
+					}
+				}
+			}
+			
+			function paixu3 (a) {
+				a.sort(function  (a,b) {
+					return a-b;
+				})
+			}
+			paixu3(a)
+			
+				
+			alert(a)
+		</script>
+	</body>
+</html>
