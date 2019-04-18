@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//4,8,2,9,4,7,4,6查最大数
+			var num='48294746';
+			num=num.split('')
+			alert(num.sort(function  (a,b) {
+				return b-a;
+			})[0]);
+			
+			//countryList=["America","Greece","Britain","Canada","China","Egypt"]检索有多少a
+			var countryList=["America","Greece","Britain","Canada","China","Egypt"];
+			var c=/a/ig;
+			var d=countryList.join('').match(c).length;
+			alert(d);
+			
+		</script>
+	</body>
+</html>
