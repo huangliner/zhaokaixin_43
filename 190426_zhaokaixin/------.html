@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		/* 
+		1)、编写一个函数，有两个参数，实现将参数的值转换为对象属性的值
+		例：f(1,2)===>返回{x:1,y:2}
+		*/
+		
+		function f () {
+		 		return {x:1,y:2}
+		 	}
+		console.log(f());
+		
+		//2)、编写函数实现两个数的四则运算
+		//addition加
+		function add(a, b) {
+		  console.log(a + b);
+		} 
+		//subtraction减
+		function sub(a, b) {
+		  console.log(a - b);
+		}
+		//multiplication乘
+		function mul(a, b) {
+		  console.log(a * b);
+		}
+		//division除
+		function div(a, b) {
+		  console.log(a / b);
+		}
+		
+		//检查发现那个声明变量貌似是多余的,然后我删掉了,直接写数字
+		add(5,6); 			//加
+		sub(6,4); 			//减
+		mul(2,2);				//乘
+		div(8,2);				//除
+		
+		</script>
+
+	</body>
+</html>
